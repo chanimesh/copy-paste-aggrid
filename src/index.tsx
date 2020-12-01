@@ -1,8 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import './main.scss';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { LicenseManager } from '@ag-grid-enterprise/core';
+
+
+LicenseManager.setLicenseKey(`${process.env.REACT_APP_AG_GRID_LICENCE_KEY}`);
 
 ReactDOM.render(
   <React.StrictMode>
